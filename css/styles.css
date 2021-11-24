@@ -1,0 +1,49 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+}
+  
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px; /* 1rem = 10px */    
+    font-family: 'Varela Round', sans-serif;
+}
+.titulo {
+    text-align: center;
+    font-size: 2.8rem;
+}
+.titulo span {
+    font-size: 2rem;
+}
+.nav-bg {
+    background-color: var(--secundario);
+}
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+.navegacion-principal{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.navegacion-principal a:link, a:visited{
+    color:var(--blanco);
+    text-decoration: none;
+    padding: 1.5rem;
+}
+.navegacion-principal a:hover{
+    color:var(--oscuro);
+    background-color: var(--primario);
+}
+
+.seccion {
+    text-align: center;
+    font-size: 1.7rem;
+}
