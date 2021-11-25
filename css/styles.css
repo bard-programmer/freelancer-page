@@ -5,6 +5,7 @@
     --secundario: #0097A7;
     --gris: #757575;
 }  
+/* Globales */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -16,6 +17,7 @@ body {
     font-size: 16px; /* 1rem = 10px */    
     font-family: 'Varela Round', sans-serif;
 }
+/* Tipografia */
 h1 {
     font-size: 3rem;
 }
@@ -31,28 +33,9 @@ h1,h2,h3 {
 .titulo span {
     font-size: 2rem;
 }
+/* Navegador */
 .nav-bg {
     background-color: var(--secundario);
-}
-.contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-}
-.boton {
-    background-color: var(--secundario);
-    text-decoration: none;
-    padding: 1rem 3rem;
-    margin-top: 1rem;
-    font-weight: bold;
-    border-radius: 7px;
-    text-transform: uppercase;
-}
-.boton:link,:visited{
-    color:var(--blanco);
-}
-.boton:hover{
-    color:var(--oscuro);
-    background-color: var(--primario);
 }
 .navegacion-principal{
     font-size: 2rem;
@@ -71,10 +54,34 @@ h1,h2,h3 {
     color:var(--oscuro);
     background-color: var(--primario);
 }
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/* Boton */
+.boton {
+    background-color: var(--secundario);
+    text-decoration: none;
+    padding: 0.8rem 3.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    border-radius: 7px;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+}
+.boton:link,:visited{
+    color:var(--blanco);
+}
+.boton:hover{
+    color:var(--oscuro);
+    background-color: var(--primario);
+}
+/* Primera seccion */
 .seccion-desarrollo {
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/default.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 125%;
     height: 400px;
     position: relative;
 }
@@ -97,15 +104,23 @@ h1,h2,h3 {
     font-size: 3.8rem;
     margin: 0 0 5rem 0;
 }
+/* Footer */
 footer {
     font-size: 1.5rem;
     color: var(--gris);
 }
+/* Media queries */
 @media (min-width: 768px) {
     .navegacion-principal {
         flex-direction: row;        
         display: flex;
         justify-content: space-between;
+    }
+    .boton {
+        width: auto;
+    }
+    .seccion-desarrollo {
+        background-size: 100% 150%;
     }
 }
 
