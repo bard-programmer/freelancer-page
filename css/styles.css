@@ -93,6 +93,10 @@ h1,h2,h3 {
 .contenido-desarrollo p{
     color:var(--blanco);
 }
+.contenido-desarrollo h2 {
+    font-size: 3.8rem;
+    margin: 0 0 5rem 0;
+}
 footer {
     font-size: 1.5rem;
     color: var(--gris);
