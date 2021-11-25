@@ -9,6 +9,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    background-color: white;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -60,6 +61,7 @@ h1,h2,h3 {
 }
 /* Boton */
 .boton {
+    color: var(--blanco);
     background-color: var(--secundario);
     text-decoration: none;
     padding: 0.8rem 3.5rem;
@@ -81,7 +83,7 @@ h1,h2,h3 {
 .seccion-desarrollo {
     background-image: url(../img/default.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 125%;
+    background-size: 200% 200%;
     height: 400px;
     position: relative;
 }
