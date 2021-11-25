@@ -16,9 +16,17 @@ body {
     font-size: 16px; /* 1rem = 10px */    
     font-family: 'Varela Round', sans-serif;
 }
-.titulo {
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h1,h2,h3 {
     text-align: center;
-    font-size: 2.6rem;
 }
 .titulo span {
     font-size: 2rem;
@@ -29,6 +37,22 @@ body {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+}
+.boton {
+    background-color: var(--secundario);
+    text-decoration: none;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+.boton:link,:visited{
+    color:var(--blanco);
+}
+.boton:hover{
+    color:var(--oscuro);
+    background-color: var(--primario);
 }
 .navegacion-principal{
     font-size: 2rem;
@@ -54,9 +78,6 @@ body {
     height: 400px;
     position: relative;
 }
-.seccion-desarrollo h2{
-    color: var(--blanco);
-}
 .contenido-desarrollo {
     position: absolute;
     width: 100%;
@@ -67,6 +88,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.contenido-desarrollo h2,
+.contenido-desarrollo p{
+    color:var(--blanco);
 }
 footer {
     font-size: 1.5rem;
