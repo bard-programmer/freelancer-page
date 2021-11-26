@@ -146,6 +146,10 @@ h1, h2, h3 {
 .main h2 {
     font-size: 3.8rem;
 }
+.main h3 {
+    color: var(--secundario);
+    font-weight: normal;
+}
 .insider {
     display: flex;
     flex-direction: row;
@@ -158,6 +162,16 @@ h1, h2, h3 {
 .insider svg{
     background-color: var(--primario);
     border-radius: 200px 200px 200px 200px;
+}
+.icono {
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+    background-color: var(--primario);
+    border-radius: 200px 200px 200px 200px;
+}
+.icono svg{
+    margin-top: 25%;
 }
 /* Footer */
 footer {
