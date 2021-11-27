@@ -151,18 +151,18 @@ h1, h2, h3 {
     font-weight: normal;
 }
 .insider {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.insider .contenedor {
-    max-width: 35rem;
-    display: inline;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem;
 }
 .insider svg{
     background-color: var(--primario);
     border-radius: 200px 200px 200px 200px;
 }
+.insider p{
+    font-size: 1.8rem;
+}
+/*
 .icono {
     width: 20rem;
     height: 20rem;
@@ -172,7 +172,17 @@ h1, h2, h3 {
 }
 .icono svg{
     margin-top: 25%;
+}*/
+
+/* Contacto */
+.contacto div {
+    display: flex;
+    justify-content: space-between;
 }
+.contacto label {
+    margin-right: 1rem;
+}
+
 /* Footer */
 footer {
     font-size: 1.5rem;
