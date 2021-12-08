@@ -258,6 +258,7 @@ h1, h2, h3 {
 footer {
     font-size: 1.5rem;
     color: var(--gris);
+    text-align: center;
 }
 
 /* Media queries */
